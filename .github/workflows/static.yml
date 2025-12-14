@@ -1,0 +1,34 @@
+name: Deploy Static Content to Pages
+
+on:
+  push:
+    branches:
+      - main # Run this workflow when pushing to the main branch
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # This step uses the Super-Linter from your CI check
+      # It only deploys if the CI workflow (Linter) was successful
+      - name: Check CI Status
+        if: ${{ github.event.workflow_run.conclusion == 'success' }}
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload the entire root directory (where index.html is)
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
