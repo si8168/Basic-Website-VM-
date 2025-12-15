@@ -5,7 +5,7 @@
 
 body {
     /* Main background color - Deep Charcoal/Near Black */
-    background-color: #2b2b2b; /* Slightly darker than your original #1e1e1e to match the image's depth */
+    background-color: #2b2b2b;
     /* Primary text color - Soft off-white */
     color: #f0f0f0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -18,7 +18,7 @@ h1 {
     color: #A63D3D; 
     border-bottom: 2px solid #544131; /* Subtle dark divider */
     padding-bottom: 10px;
-    font-weight: 600; /* Make the title a bit heavier */
+    font-weight: 600;
 }
 
 h2 {
@@ -29,7 +29,7 @@ h2 {
 /* Link Styles */
 a {
     color: #A63D3D; /* Match the primary header color for links */
-    text-decoration: none; /* Remove underline */
+    text-decoration: none;
 }
 
     a:hover {
