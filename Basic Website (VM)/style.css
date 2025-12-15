@@ -1,24 +1,24 @@
 /* -------------------------------------- */
-/* Theme: Deep & Dark Charcoal (Updated)  */
-/* Mood Board Colors: Dark, Bronze/Red, Wood */
+/* Theme: KiwiTech Bronze & Charcoal      */
+/* Mood Board Colors: Dark, Bronze, Wood  */
 /* -------------------------------------- */
 
 body {
     /* Main background color - Deep Charcoal/Near Black */
-    background-color: #2b2b2b;
+    background-color: #1e1e1e;
+    
     /* Primary text color - Soft off-white */
     color: #f0f0f0;
+    
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 30px;
 }
 
-/* Header Styles - Use the Red/Bronze Accent Color */
+/* Header Styles - Use the Bronze/Accent Color */
 h1 {
-    /* Rich, deep bronze-red for the main title */
-    color: #A63D3D; 
+    color: #A67C52; 
     border-bottom: 2px solid #544131; /* Subtle dark divider */
     padding-bottom: 10px;
-    font-weight: 600;
 }
 
 h2 {
@@ -26,44 +26,22 @@ h2 {
     margin-top: 25px;
 }
 
-/* Link Styles */
-a {
-    color: #A63D3D; /* Match the primary header color for links */
-    text-decoration: none;
-}
-
-    a:hover {
-        color: #C06464; /* Slightly brighter red/bronze on hover */
-    }
-
 /* Branch List Styles */
 ul {
     list-style-type: none; /* Remove bullet points */
     padding: 0;
 }
 
-    ul li {
-        background-color: #383838; /* A darker, glossier background for list items */
-        margin-bottom: 12px;
-        padding: 12px;
-        border-radius: 6px; /* Slightly more rounded edges */
-        /* Bronze-Red accent bar on the left */
-        border-left: 6px solid #A63D3D; 
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4); /* Subtle shadow for depth (glossy effect) */
-    }
+ul li {
+    background-color: #2b2b2b; /* Slightly lighter background for list items */
+    margin-bottom: 8px;
+    padding: 10px;
+    border-radius: 4px; /* Soft edges */
+    border-left: 4px solid #A67C52; /* Bronze accent bar */
+}
 
 /* General Paragraph Text */
 p {
-    line-height: 1.7; /* Increased line-height for better readability on dark background */
+    line-height: 1.6;
     margin-top: 20px;
-}
-
-/* Footer Style (If applicable) */
-footer {
-    margin-top: 50px;
-    padding-top: 20px;
-    border-top: 1px dashed #544131;
-    color: #888888;
-    text-align: center;
-    font-size: 0.85em;
 }
